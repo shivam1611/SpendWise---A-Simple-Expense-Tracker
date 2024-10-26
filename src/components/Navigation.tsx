@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <div className="navigation w-80 bg-black h-screen ">
+    <div className="navigation w-[22rem] bg-black h-screen ">
       <div className="logo_section w-full h-32 flex justify-center items-center">
         <h2 className="text-3xl text-white font-head ">
           <span className="text-3xl text-primaryBlue font-extrabold font-head px-2">
