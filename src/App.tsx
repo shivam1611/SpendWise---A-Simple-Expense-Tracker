@@ -1,11 +1,39 @@
-
+import { createBrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
+import Transaction from "./pages/Transaction";
+import Accounts from "./pages/Accounts";
+import { RouterProvider } from "react-router-dom";
+import AppLayout from "./pages/AppLayout";
+import Expenses from "./pages/Expenses";
 
 const App = () => {
-  return (
-    <div>
-      <p className="text-white bg-green-500 p-4 text-xl text-center">Hello Codeshey this is the starting of spendwise app</p>
-    </div>
-  )
-}
+  const router = createBrowserRouter([
+    {
+     
+      element:<AppLayout/>,
+      children:[
+        {
+          path:'/',
+          element:<Home/>
+        },
+        {
+          path: "/transactions",
+          element: <Transaction />,
+        },
+        {
+          path: "/accounts",
+          element: <Accounts />,
+        },
+        {
+          path: "/expenses",
+          element: <Expenses/>,
+        },
+      ]
+    },
+    
+   
+  ]);
 
-export default App
+  return <RouterProvider router={router} />;
+};
+export default App;

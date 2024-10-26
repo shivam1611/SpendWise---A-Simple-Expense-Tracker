@@ -1,3 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Color Pallete  */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary-blue: #3d5ddd;
+  --dark-gray: #464555;
+  --black: rgb(17, 17, 17);
+  --light-gray: #aba9bb;
+  --light-green: #00b982;
+  --dark-green: #008151;
+  --white-frost: #f9f8ff;
+  --white: white;
+  --red: #d00d38;
+  --yellow: #eff652;
+  --heading-font: "IBM Plex Sans", sans-serif;
+  --body-font: "Lato", sans-serif;
+  --accent-font: "Montserrat", sans-serif;
+}
+
+/* CSS RESET  */
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+body {
+  background-color: var(--white-frost);
+}
+
+.active {
+  background-color: var(--light-green);
+  color: var(--black);
+  transition: all .3s ease-in-out;
+}
