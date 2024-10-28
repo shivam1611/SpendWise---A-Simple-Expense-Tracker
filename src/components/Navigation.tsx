@@ -13,28 +13,28 @@ const Navigation = () => {
       </div>
       <ul className="navlist h-3/5 w-full flex justify-start items-center flex-col p-6  gap-6 mt-10">
         <NavLink
-          className="w-full h-14 text-xl rounded-lg flex justify-start items-center p-8 gap-4 text-lightgray "
+          className="font-semibold w-full h-14 text-lg rounded-lg flex justify-start items-center p-8 gap-4 text-lightgray "
           to="/"
         >
-          <i className=" text-2xl fa-solid fa-house"></i> Home
+          <i className=" text-xl fa-solid fa-house"></i> Home
         </NavLink>
         <NavLink
-          className="w-full h-14 text-xl rounded-lg flex justify-start items-center p-8 gap-4 text-lightgray  "
+          className="font-semibold w-full h-14 text-lg rounded-lg flex justify-start items-center p-8 gap-4 text-lightgray  "
           to="/transactions"
         >
-          <i className=" text-2xl fa-solid fa-right-left"></i> Transactions
+          <i className=" text-xl fa-solid fa-right-left"></i> Transactions
         </NavLink>
         <NavLink
           to="/accounts"
-          className="w-full h-14 text-xl rounded-lg flex justify-start  p-8 gap-4 items-center text-lightgray"
+          className="font-semibold w-full h-14 text-lg rounded-lg flex justify-start  p-8 gap-4 items-center text-lightgray"
         >
-          <i className=" text-2xl fa-solid fa-file-invoice"></i> Accounts
+          <i className=" text-xl fa-solid fa-file-invoice"></i> Accounts
         </NavLink>
         <NavLink
           to="/expenses"
-          className="w-full h-14 text-xl rounded-lg flex justify-start  p-8 gap-4 items-center text-lightgray"
+          className="font-semibold w-full h-14 text-lg rounded-lg flex justify-start  p-8 gap-4 items-center text-lightgray"
         >
-          <i className=" text-2xl fa-solid fa-wallet"></i> Expenses
+          <i className=" text-xl fa-solid fa-wallet"></i> Expenses
         </NavLink>
       </ul>
     </div>
