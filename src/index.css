@@ -10,14 +10,16 @@
 
 :root {
   --primary-blue: #3d5ddd;
+  --light-blue:#d3dcff;
   --dark-gray: #464555;
-  --black: rgb(23, 23, 23);
+  --black: rgb(30, 30, 30);
   --light-gray: #aba9bb;
   --light-green: #00b982;
   --dark-green: #008151;
   --white-frost: #f5f5f5;
   --white: white;
   --red: #d00d38;
+  --light-red:rgb(255, 43, 43);
   --yellow: #eff652;
   --heading-font: "IBM Plex Sans", sans-serif;
   --body-font: "Lato", sans-serif;

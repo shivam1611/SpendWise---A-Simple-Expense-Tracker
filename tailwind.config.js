@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         primaryBlue: "var(--primary-blue)",
+        lightBlue: "var(--light-blue)",
         darkGray: "var(--dark-gray)",
         black: "var(--black)",
         lightgray: "var(--light-gray)",
@@ -13,6 +14,7 @@ export default {
         whiteFrost: "var(--white-frost)",
         white: " var(--white)",
         red: "var(--red)",
+        lightRed: "var(--light-red)",
         yellow: "var(--yellow)",
       },
       fontFamily: {

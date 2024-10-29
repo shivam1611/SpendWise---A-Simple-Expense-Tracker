@@ -1,8 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <div className="navigation w-[22rem] bg-black h-screen ">
+    <div className="navigation w-[22rem] bg-black h-screen relative ">
       <div className="logo_section w-full h-32 flex justify-center items-center">
         <h2 className="text-3xl text-white font-head ">
           <span className="text-3xl text-primaryBlue font-extrabold font-head px-2">
@@ -37,6 +37,12 @@ const Navigation = () => {
           <i className=" text-xl fa-solid fa-wallet"></i> Expenses
         </NavLink>
       </ul>
+      <div className="log-out-button absolute w-full h-12 bottom-12  flex justify-center items-center gap-4 cursor-pointer hover:scale-105 transition-all select-none">
+        <p className="">
+          <i className="fa-solid fa-arrow-right-from-bracket text-2xl text-lightRed "></i>
+        </p>
+        <p className="text-xl text-lightRed">Log Out</p>
+      </div>
     </div>
   );
 };
