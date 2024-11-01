@@ -1,6 +1,9 @@
+import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { sign_in_reject } from "../features/authentication.js";
 
 const Navigation = () => {
+  const dispatch = useDispatch();
   return (
     <div className="navigation w-[22rem] bg-black h-screen relative ">
       <div className="logo_section w-full h-32 flex justify-center items-center">
@@ -41,7 +44,12 @@ const Navigation = () => {
         <p className="">
           <i className="fa-solid fa-arrow-right-from-bracket text-2xl text-lightRed "></i>
         </p>
-        <p className="text-xl text-lightRed">Log Out</p>
+        <p
+          className="text-xl text-lightRed"
+          onClick={() => dispatch(sign_in_reject())}
+        >
+          Log Out
+        </p>
       </div>
     </div>
   );

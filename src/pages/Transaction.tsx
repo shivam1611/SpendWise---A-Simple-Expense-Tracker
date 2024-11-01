@@ -1,9 +1,11 @@
-
+import Form from "../components/Form";
 
 const Transaction = () => {
   return (
-    <div>Transaction</div>
-  )
-}
+    <div>
+      <Form />
+    </div>
+  );
+};
 
-export default Transaction
+export default Transaction;
